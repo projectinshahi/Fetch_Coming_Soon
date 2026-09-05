@@ -1,0 +1,25 @@
+:root {
+  --blue: #2166ae;
+  --blue-soft: #3d84c6;
+  --yellow: #f7c325;
+  --orange: #f5871f;
+  --pink: #ec1b6c;
+  --green: #8cc63f;
+  --cloud: #bcd8f0;
+
+  font-family: 'Fredoka', system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
