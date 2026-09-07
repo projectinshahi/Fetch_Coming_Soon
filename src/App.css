@@ -1,6 +1,10 @@
 .room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100svh;
-  background: #faf7f1;
+  /* matches the mockup's wall, so letterbox bands are invisible */
+  background: #f3f0eb;
 }
 
 .screen {
@@ -9,4 +13,17 @@
   height: 100svh;
   object-fit: cover;
   object-position: center;
+}
+
+/*
+ * The mockup is 1.78:1 with its wording baked in. Cover only keeps the
+ * headline whole down to ~0.64:1; below that it crops into the text, so
+ * switch to contain and show the whole design instead.
+ */
+@media (max-aspect-ratio: 2 / 3) {
+  .screen {
+    height: auto;
+    max-height: 100svh;
+    object-fit: contain;
+  }
 }
